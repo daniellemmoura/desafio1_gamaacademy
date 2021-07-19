@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arte Diagonal</title>
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="index.html">
+                <img src="logo.png" class="logo" alt="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+
+                <h2>Costura Criativa
+                    <br>
+                    <span>Arte Diagonal</span>
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in ullamcorper sem, ac pulvinar est. 
+                    Ut dignissim, mi quis ultrices euismod, ligula libero ultricies erat, eget faucibus sem dui accumsan ante. 
+                    Aliquam et leo eget arcu ultricies ultrices vitae sit amet ipsum.
+                </p>
+
+                <a href="promocoes.html">Promoções</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="produto1.jpeg" class="produto1" alt="produto1">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="produto2.jpeg" onlick="imgSlider('produto2.jpeg')" alt=""></li>
+            <li><img src="produto3.jpeg" onlick="imgSlider('produto3.jpeg')" alt=""></li>
+            <li><img src="produto4.jpeg" onlick="imgSlider('produto4.jpeg')" alt=""></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="instagram"></a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything)
+        {
+            document.querySelector('.imgBox').src = anything;
+        }
+    </script>
+</body>
+</html>
